@@ -58,9 +58,11 @@
     }
   },
   "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --ignore-path .gitignore --fix"
+    ],
     "**/*": [
-      "eslint --fix",
-      "prettier --write"
+      "prettier --ignore-path .gitignore --write"
     ]
   }
 }
