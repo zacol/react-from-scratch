@@ -9,7 +9,6 @@ type Post = {
 }
 
 const postsAdapter = createEntityAdapter<Post>();
-console.log(postsAdapter)
 
 const initialState = postsAdapter.getInitialState<AdapterState>({
   status: 'idle',
